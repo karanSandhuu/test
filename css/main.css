@@ -1,0 +1,304 @@
+/* GENERAL STYLES - NOT TO BE EDITED */
+/* reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    /* stop page from scrolling */
+    height: 100%;
+    overflow: hidden;
+}
+
+div, main, section, h1, img {
+    position: absolute;
+}
+
+#loading, main, h1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loading img {
+    width: 50px;
+    height: auto;
+}
+
+main {
+    width: 960px;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.next:hover, .prev:hover {
+    cursor: pointer;
+}
+
+/* GENERAL STYLES - MAY BE EDITED */
+.next, .prev {
+    bottom: 20px;
+    padding: 5px;
+    color: #FFF;
+    border: solid 1px #FFF;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s;
+    
+}
+
+.next {
+    right: 20px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next:hover, .prev:hover {
+    color: #000;
+    background: rgba(255, 255, 255, 1);
+}
+
+/* shared screen styles */
+section h1 {
+    color: #FFF;
+}
+
+.ele {
+    background: #000;
+    width: 100px;
+    height: 100px;
+}
+
+.eleHover:hover {
+    cursor: pointer;
+}
+
+/* screen 1 styles */
+#screen1 {
+    background: #f0e7b7;
+}
+
+#handPhone {
+    width: 27%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 145%;
+}
+
+/* screen 2 styles */
+#screen2 {
+    background: url(../img/bg2.jpg);
+}
+
+#ele1 {
+    top: 50px;
+    left: 50px;
+}
+
+#ele2 {
+    top: 40px;
+    right: 60px;
+}
+
+#ele3 {
+    bottom: 100px;
+    left: 300px;
+}
+
+#ele4 {
+    bottom: 150px;
+    right: 200px;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* ele4:hover */
+
+
+#ele4hover {
+    background: #FFF;
+    bottom: 250px;
+    right: 100px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+/* screen 3 styles */
+#screen3 {
+    background: url(../img/bg1.jpg);
+}
+
+#ele5 {
+    top: 50px;
+    left: 50px;
+}
+
+#ele6 {
+    top: 40px;
+    right: 60px;
+}
+
+#ele7 {
+    bottom: 100px;
+    left: 300px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#ele7instructions {
+    color: #FFF;
+    left: 300px;
+    bottom: 80px;
+    width: 100px;
+    text-align: center;
+}
+
+#ele7content {
+    color: #FFF;
+    width: 160px;
+    height: 160px;
+    opacity: 0;
+}
+
+#ele8 {
+    bottom: 150px;
+    right: 200px;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+}
+
+#ele8hover {
+    bottom: 250px;
+    right: -100px;
+}
+
+/* screen 4 styles */
+#screen4 {
+    background: url(../img/bg2.jpg);
+}
+
+#ele9 {
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+#ele9 p {
+    text-align: center;
+    color: #FFF;
+    margin: 5px;
+    font-family: Arial;
+}
+
+.bars {
+    height: 5px;
+    width: 30px;
+    background: #FFF;
+    bottom: 0;
+}
+
+#bar1 {
+    left: 15px;
+}
+
+#bar2 {
+    left: 50px;
+}
+
+#bar3 {
+    left: 85px;
+}
+
+#bar4 {
+    left: 120px;
+}
+
+#bar5 {
+    left: 155px;
+}
+
+#ele10 {
+    top: 40px;
+    right: 60px;
+}
+
+#ele11 {
+    bottom: 100px;
+    left: 300px;
+}
+
+#ele12 {
+    bottom: 150px;
+    right: 200px;
+}
+
+/* screen 5 styles */
+#screen5 {
+    background: url(../img/bg1.jpg);
+}
+
+#ele13 {
+    top: 20%;
+    left: 20%;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+}
+
+#ele14 {
+    top: 20%;
+    right: 20%;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    display: none;
+}
+
+.close {
+    color: #FFF;
+    top: 10px;
+    right: 10px;
+}
+
+.overlayContent {
+    color: #FFF;
+    top: 0;
+    text-align: center;
+}
+
+/* screen 6 styles */
+#screen6 {
+    background: url(../img/bg2.jpg);
+}
+
+#ele15 {
+    top: 20%;
+    right: 20%;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+    transform: rotate(-45deg);
+}
